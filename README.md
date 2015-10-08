@@ -13,3 +13,16 @@ I used this [almost perfect boilerplate](https://github.com/ngbp/ngbp), and adju
 - Deleted README files and other fancy things :)
 
 The principles are still the same, so have a look at their documentation.
+
+# Installation
+
+1. `git clone git@github.com:gruberb/angular-boilerplate.git`
+2. `cd angular-boilerplate`
+3. `sudo npm -g install grunt-cli karma bower`
+4. `npm install`
+5. `bower install`
+6. 
+
+# Run
+
+Open a browser and navigate to `localhost:9001`
