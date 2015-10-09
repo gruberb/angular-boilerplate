@@ -24,6 +24,6 @@ The principles are still the same, so have a look at their documentation.
 
 # Run
 
-1. `grunt serve`
+`grunt serve`
 
 Open a browser and navigate to `localhost:9001`
