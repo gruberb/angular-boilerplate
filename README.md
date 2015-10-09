@@ -21,8 +21,9 @@ The principles are still the same, so have a look at their documentation.
 3. `sudo npm -g install grunt-cli karma bower`
 4. `npm install`
 5. `bower install`
-6. 
 
 # Run
+
+1. `grunt serve`
 
 Open a browser and navigate to `localhost:9001`
