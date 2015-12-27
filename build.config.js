@@ -61,7 +61,9 @@ module.exports = {
     js: [
       'node_modules/angular/angular.js',
       'node_modules/angular-ui-router/release/angular-ui-router.js',
-      'node_modules/underscore/underscore-min.js'
+      'node_modules/underscore/underscore-min.js',
+      'node_modules/jquery/dist/jquery.min.js',
+      'node_modules/boostrap/dist/js/bootstrap.min.js'
     ],
     css: [
     ],

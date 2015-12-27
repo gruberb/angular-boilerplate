@@ -9,6 +9,7 @@
     "bootstrap": "^3.3.6",
     "bootstrap-sass": "^3.3.6",
     "immutable": "^3.7.6",
+    "jquery": "^2.1.4",
     "underscore": "^1.8.3"
   },
   "devDependencies": {
