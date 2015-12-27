@@ -1,7 +1,7 @@
 {
   "author": "Bastian Gruber",
   "name": "angular-karma-boilerplate",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "homepage": "",
   "dependencies": {
     "angular": "^1.4.8",

@@ -16,12 +16,16 @@ I used this [almost perfect boilerplate](https://github.com/ngbp/ngbp), and adju
 
 The principles are still the same, so have a look at their documentation.
 
-# Installation
+# Install either via
 
 1. `git clone git@github.com:gruberb/angular-boilerplate.git`
 2. `cd angular-boilerplate`
 3. `sudo npm -g install grunt-cli karma`
 4. `npm install`
+
+# or via
+1. `npm install angular-karma-boilerplate`
+
 
 # Run
 
