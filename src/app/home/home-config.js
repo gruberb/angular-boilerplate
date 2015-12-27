@@ -10,6 +10,7 @@ function HomeConfig($stateProvider) {
     views: {
       "main": {
         controller: 'HomeController',
+        controllerAs: 'home',
         templateUrl: 'home/home.tpl.html'
       }
     }

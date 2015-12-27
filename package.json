@@ -3,9 +3,16 @@
   "name": "basic-frontend",
   "version": "1.0.0",
   "homepage": "",
-  "dependencies": {},
+  "dependencies": {
+    "angular": "^1.4.8",
+    "angular-ui-router": "^0.2.15",
+    "bootstrap": "^3.3.6",
+    "bootstrap-sass": "^3.3.6",
+    "immutable": "^3.7.6",
+    "underscore": "^1.8.3"
+  },
   "devDependencies": {
-    "bower": "^1.4.1",
+    "angular-mocks": "^1.4.8",
     "grunt": "~0.4.1",
     "grunt-bump": "0.0.6",
     "grunt-cli": "^0.1.13",

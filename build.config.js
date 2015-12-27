@@ -35,7 +35,7 @@ module.exports = {
    */
   test_files: {
     js: [
-      'vendor/angular-mocks/angular-mocks.js'
+      'node_modules/angular-mocks/angular-mocks.js'
     ]
   },
 
@@ -59,9 +59,9 @@ module.exports = {
    */
   vendor_files: {
     js: [
-      'vendor/angular/angular.js',
-      'vendor/angular-ui-router/release/angular-ui-router.js',
-      'vendor/underscore/underscore-min.js'
+      'node_modules/angular/angular.js',
+      'node_modules/angular-ui-router/release/angular-ui-router.js',
+      'node_modules/underscore/underscore-min.js'
     ],
     css: [
     ],

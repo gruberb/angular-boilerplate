@@ -11,6 +11,6 @@ run.$inject = ['$rootScope', '$state'];
 
 function run($rootScope, $state) {
   $rootScope.$on('$stateChangeStart', function (event, toState, toParams, fromState, fromParams) {
-    console.log('change state');
+    // react on state change events
   });
 }
