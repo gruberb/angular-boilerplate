@@ -1,4 +1,4 @@
-# A basic AngularJS boilerplate  [![Build Status](https://travis-ci.org/gruberb/angular-boilerplate.svg?branch=master)](https://travis-ci.org/gruberb/angular-boilerplate)
+# A basic AngularJS boilerplate  [![Build Status](https://travis-ci.org/gruberb/angular-boilerplate.svg?branch=master)](https://travis-ci.org/gruberb/angular-boilerplate)[![npm installs](https://img.shields.io/npm/dm/angular-karma-boilerplate.svg?style=flat)](https://github.com/gruberb/angular-boilerplate)
 
 A basic template with
 - Different folders for staging and production
