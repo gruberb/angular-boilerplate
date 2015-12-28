@@ -2,17 +2,11 @@
 
 A basic template with
 - Different folders for staging and production
-- Minify build files
+- `grunt compile` for one minified JavaScript file for production
+- ImmutableJS library for immutable data
 - Headless browser testing with PhantomJS
 - Jasmine testing framework
-- ["Official" AngularJS style guide and patterns](https://github.com/johnpapa/angular-styleguide) implemented
-
-I used this [almost perfect boilerplate](https://github.com/ngbp/ngbp), and adjusted it to my needs:
-- Removed .coffee script helpers and compilers
-- Switched from LESS to SASS
-- Using ControllerAs syntax
-- Removed bower and just using npm for package managing
-- Deleted README files and other fancy things :)
+- [AngularJS style guide and patterns](https://github.com/johnpapa/angular-styleguide) implemented
 
 The principles are still the same, so have a look at their documentation.
 
@@ -32,3 +26,13 @@ The principles are still the same, so have a look at their documentation.
 `grunt serve`
 
 Open a browser and navigate to `localhost:9001`
+
+# Build process
+
+### Staging
+
+`grunt build` for not minified version to debug in the browser
+
+### Production
+
+`grunt comile` for creating a `bin` folder with one minified JavaScript file for production
