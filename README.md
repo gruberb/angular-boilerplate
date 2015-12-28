@@ -8,7 +8,6 @@ A basic template with
 - Jasmine testing framework
 - [AngularJS style guide and patterns](https://github.com/johnpapa/angular-styleguide) implemented
 
-The principles are still the same, so have a look at their documentation.
 
 # Install either via
 
