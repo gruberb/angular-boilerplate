@@ -11,18 +11,31 @@ module.exports = function ( karma ) {
     files: [
       <% scripts.forEach( function ( file ) { %>'<%= file %>',
       <% }); %>
-      'src/**/*.js',
+      'src/**/*.js'
     ],
     exclude: [
       'src/assets/**/*.js'
     ],
     frameworks: [ 'jasmine' ],
-    plugins: [ 'karma-jasmine', 'karma-phantomjs-launcher'],
+    plugins: [ 'karma-jasmine', 'karma-phantomjs2-launcher', 'karma-coverage'],
 
     /**
      * How to report, by default.
      */
-    reporters: 'dots',
+    reporters: ['dots', 'coverage'],
+
+    preprocessors: {
+      // source files, that you wanna generate coverage for
+      // do not include tests or libraries
+      // (these files will be instrumented by Istanbul)
+      'src/**/*.js': ['coverage']
+    },
+
+    // optionally, configure the reporter
+    coverageReporter: {
+      type : 'html',
+      dir : 'coverage/'
+    },
 
     /**
      * On which port should the browser connect, on which port is the test runner
@@ -51,7 +64,7 @@ module.exports = function ( karma ) {
      * the aesthetic advantage of not launching a browser every time you save.
      */
     browsers: [
-      'PhantomJS'
+      'PhantomJS2'
     ]
   });
 };

@@ -26,6 +26,10 @@ A basic template with
 
 Open a browser and navigate to `localhost:9001`
 
+# Coverage
+
+To see the coverage report navigate to 'coverage' folder created by grunt serve, build or compile, and locate index.html file.
+
 # Build process
 
 ### Staging
@@ -34,4 +38,4 @@ Open a browser and navigate to `localhost:9001`
 
 ### Production
 
-`grunt comile` for creating a `bin` folder with one minified JavaScript file for production
+`grunt compile` for creating a `bin` folder with one minified JavaScript file for production
