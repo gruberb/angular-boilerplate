@@ -1,6 +1,7 @@
 language: node_js
 
 before_install:
+  - export PHANTOMJS_BIN=/usr/local/phantomjs/bin/phantomjs
   - gem install sass
   - gem install compass
 
