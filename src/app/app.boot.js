@@ -6,7 +6,8 @@
         'templates-app',
         'templates-common',
         'application.home',
-        'ui.router'
+        'ui.router',
+        'pascalprecht.translate'
     ])
     .run(run);
 

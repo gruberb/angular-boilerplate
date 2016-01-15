@@ -7,6 +7,7 @@ A basic template with
 - Headless browser testing with PhantomJS
 - Jasmine testing framework
 - [AngularJS style guide and patterns](https://github.com/johnpapa/angular-styleguide) implemented
+- Multiple language support
 
 
 # Install either via
@@ -28,7 +29,7 @@ Open a browser and navigate to `localhost:9001`
 
 # Coverage
 
-To see the coverage report navigate to 'coverage' folder created by grunt serve, build or compile, and locate index.html file.
+To see the coverage report navigate to `coverage` folder created by grunt serve, build or compile, and locate index.html file.
 
 # Build process
 
@@ -39,3 +40,5 @@ To see the coverage report navigate to 'coverage' folder created by grunt serve,
 ### Production
 
 `grunt compile` for creating a `bin` folder with one minified JavaScript file for production
+
+For compiling the langauge files you need to add them to list in Gruntfile config under jsonmin->locale->files
