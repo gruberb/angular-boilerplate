@@ -16,6 +16,7 @@ module.exports = function ( grunt ) {
   grunt.loadNpmTasks('grunt-contrib-jasmine');
   grunt.loadNpmTasks('grunt-ng-annotate');
   grunt.loadNpmTasks('grunt-html2js');
+  grunt.loadNpmTasks('grunt-jsonmin');
 
   /**
    * Load in our build configuration file.
@@ -56,6 +57,16 @@ module.exports = function ( grunt ) {
             expand: true
           }
        ]
+      },
+      build_app_locale: {
+        files: [
+          {
+            src: ['<%= app_files.locale %>'],
+            dest: '<%= build_dir %>/assets/locale',
+            expand: true,
+            flatten: true
+          }
+        ]
       },
       build_vendor_assets: {
         files: [
@@ -111,11 +122,29 @@ module.exports = function ( grunt ) {
             dest: '<%= compile_dir %>/',
             cwd: '.',
             expand: true
+          },
+          {
+            src: ['<%= app_files.locale %>'],
+            dest: '<%= build_dir %>/assets/locale',
+            expand: true,
+            flatten: true
           }
         ]
       }
     },
-
+    jsonmin: {
+      locale: {
+        options: {
+          stripWhitespace: true ,
+          stripComments: true
+        },
+        /* List of localisation files dest:source */
+        files: {
+          '<%= compile_dir %>/assets/locale/locale-en_EN.json': '<%= build_dir %>/assets/locale/locale-en_EN.json',
+          '<%= compile_dir %>/assets/locale/locale-de_DE.json': '<%= build_dir %>/assets/locale/locale-de_DE.json'
+        }
+       }
+    },
     connect: {
       server: {
         options: {
@@ -467,7 +496,7 @@ module.exports = function ( grunt ) {
    */
   grunt.registerTask( 'build', [
     'clean', 'html2js', 'jshint', 'sass:build',
-    'concat:build_css', 'copy:build_app_assets', 'copy:build_vendor_assets',
+    'concat:build_css', 'copy:build_app_assets', 'copy:build_app_locale', 'copy:build_vendor_assets',
     'copy:build_appjs', 'copy:build_vendorjs', 'copy:build_vendorcss', 'index:build', 'karmaconfig',
     'karma:continuous'
   ]);
@@ -477,7 +506,7 @@ module.exports = function ( grunt ) {
    * minifying your code.
    */
   grunt.registerTask( 'compile', [
-    'sass:compile', 'copy:compile_assets', 'ngAnnotate', 'concat:compile_js', 'uglify', 'index:compile'
+    'sass:compile', 'copy:compile_assets', 'ngAnnotate', 'concat:compile_js', 'uglify', 'jsonmin:locale', 'index:compile'
   ]);
 
   grunt.registerTask( 'serve', [

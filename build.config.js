@@ -17,7 +17,7 @@ module.exports = {
    * our reusable components' (`src/common`) template HTML files, while
    * `atpl` contains the same, but for our app's code. `html` is just our
    * main HTML file, `less` is our main stylesheet, and `unit` contains our
-   * app's unit tests.
+   * app's unit tests. 'locale' is containing location to translations
    */
   app_files: {
     js: [ 'src/**/*.js', '!src/**/*.spec.js', '!src/assets/**/*.js' ],
@@ -27,7 +27,9 @@ module.exports = {
     ctpl: [ 'src/common/**/*.tpl.html' ],
 
     html: [ 'src/index.html' ],
-    sass: 'src/sass/main.scss'
+    sass: 'src/sass/main.scss',
+
+    locale: 'src/assets/locale/**/*.json'
   },
 
   /**
@@ -63,7 +65,9 @@ module.exports = {
       'node_modules/angular-ui-router/release/angular-ui-router.js',
       'node_modules/underscore/underscore-min.js',
       'node_modules/jquery/dist/jquery.min.js',
-      'node_modules/boostrap/dist/js/bootstrap.min.js'
+      'node_modules/boostrap/dist/js/bootstrap.min.js',
+      'node_modules/angular-translate/dist/angular-translate.min.js',
+      'node_modules/angular-translate/dist/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js'
     ],
     css: [
     ],

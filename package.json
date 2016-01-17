@@ -10,7 +10,8 @@
     "bootstrap-sass": "^3.3.6",
     "immutable": "^3.7.6",
     "jquery": "^2.1.4",
-    "underscore": "^1.8.3"
+    "underscore": "^1.8.3",
+    "angular-translate": "~2.8.1"
   },
   "devDependencies": {
     "angular-mocks": "^1.4.8",
@@ -29,6 +30,7 @@
     "grunt-conventional-changelog": "^0.1.2",
     "grunt-html2js": "^0.1.9",
     "grunt-karma": "^0.8.2",
+    "grunt-jsonmin":"~0.2.4",
     "karma-coverage": "~0.5.3",
     "grunt-ng-annotate": "^0.8.0",
     "karma": "^0.12.9",
