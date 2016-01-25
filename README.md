@@ -19,7 +19,6 @@ A basic template with
 # or via
 1. `npm install angular-karma-boilerplate`
 
-
 # Run
 
 `grunt serve`
