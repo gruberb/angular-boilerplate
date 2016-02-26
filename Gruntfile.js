@@ -37,10 +37,14 @@ module.exports = function ( grunt ) {
     /**
      * The directories to delete when `grunt clean` is executed.
      */
-    clean: [
-      '<%= build_dir %>',
-      '<%= compile_dir %>'
-    ],
+    clean: {
+      build: {
+        options: {
+          force: true
+        },
+        src: ['<%= build_dir %>', '<%= compile_dir %>']
+      }
+  },
 
     /**
      * The `copy` task just copies files from A to B. We use it here to copy
@@ -484,7 +488,7 @@ module.exports = function ( grunt ) {
   grunt.renameTask( 'watch', 'delta' );
   grunt.registerTask( 'watch', ['build', 'karma:unit', 'delta'] );
 
-  grunt.registerTask('test', 'jasmine');
+  grunt.registerTask('test', 'karma');
 
   /**
    * The default task is to build and compile.
@@ -495,7 +499,7 @@ module.exports = function ( grunt ) {
    * The `build` task gets your app ready to run for development and testing.
    */
   grunt.registerTask( 'build', [
-    'clean', 'html2js', 'jshint', 'sass:build',
+    'clean:build', 'html2js', 'jshint', 'sass:build',
     'concat:build_css', 'copy:build_app_assets', 'copy:build_app_locale', 'copy:build_vendor_assets',
     'copy:build_appjs', 'copy:build_vendorjs', 'copy:build_vendorcss', 'index:build', 'karmaconfig',
     'karma:continuous'

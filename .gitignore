@@ -5,3 +5,4 @@ bin/
 node_modules/
 .sass-cache
 coverage
+.DS_STORE

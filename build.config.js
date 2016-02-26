@@ -37,7 +37,10 @@ module.exports = {
    */
   test_files: {
     js: [
-      'node_modules/angular-mocks/angular-mocks.js'
+      'node_modules/angular/angular.js',
+      'node_modules/angular-mocks/angular-mocks.js',
+      'node_modules/angular-translate/dist/angular-translate.js',
+      'node_modules/angular-translate/dist/angular-translate-loader-static-files/angular-translate-loader-static-files.js'
     ]
   },
 

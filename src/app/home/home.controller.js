@@ -1,14 +1,16 @@
 (function() {
   'use strict';
-  
+
   angular
   .module('application.home')
   .controller('HomeController', HomeController);
 
-  function HomeController($state, $translate) {
+  function HomeController($translate) {
     var home = this;
+
     home.title = 'Home';
-    home.toggleLang = function () {
+
+    home.toggleLang = function() {
       if ($translate.use() === 'en_EN') {
         $translate.use('de_DE');
       } else {
