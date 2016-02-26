@@ -6,3 +6,4 @@ node_modules/
 .sass-cache
 coverage
 .DS_STORE
+npm-debug.log
