@@ -8,7 +8,6 @@ describe( 'home section', function() {
 
   beforeEach( module( function( $translateProvider ) {
     $translateProvider.registerAvailableLanguageKeys(['de_DE', 'en_EN']);
-    $translateProvider.use('en_EN');
   }));
 
   beforeEach(inject( function($injector){
