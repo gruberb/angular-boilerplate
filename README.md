@@ -1,12 +1,12 @@
 # A basic AngularJS boilerplate [![Build Status](https://travis-ci.org/gruberb/angular-boilerplate.svg?branch=master)](https://travis-ci.org/gruberb/angular-boilerplate) [![npm installs](https://img.shields.io/npm/dm/angular-karma-boilerplate.svg?style=flat)](https://github.com/gruberb/angular-boilerplate) [![Code Climate](https://codeclimate.com/github/gruberb/angular-boilerplate/badges/gpa.svg)](https://codeclimate.com/github/gruberb/angular-boilerplate)
 
-A basic template with
+A basic template with (now updated to Angular 1.5.0)
 - Different folders for staging and production
 - `grunt compile` for one minified JavaScript file for production
 - ImmutableJS library for immutable data
 - Headless browser testing with PhantomJS
 - Jasmine testing framework
-- [AngularJS style guide and patterns](https://github.com/johnpapa/angular-styleguide) implemented
+- [AngularJS inoffical style guide and patterns](https://github.com/johnpapa/angular-styleguide) implemented
 - Multiple language support
 
 
