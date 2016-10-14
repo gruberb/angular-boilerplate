@@ -14,11 +14,8 @@ A basic template with (now updated to Angular 1.5.0)
 
 1. `git clone git@github.com:gruberb/angular-boilerplate.git`
 2. `cd angular-boilerplate`
-3. `sudo npm -g install grunt-cli karma`
+3. `npm -g install grunt-cli karma`
 4. `npm install`
-
-# or via
-1. `npm install angular-karma-boilerplate`
 
 # Run
 
